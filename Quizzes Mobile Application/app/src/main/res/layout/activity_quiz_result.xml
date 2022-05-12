@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@mipmap/r_b_foreground"
+    tools:context=".QuizResult">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:background="#AB03A9F4"
+        android:text=" Thank you "
+        android:textSize="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:fontFamily="casual"
+        android:background="#AB03A9F4"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:text=" your result is " />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:fontFamily="casual"
+        android:background="#FD03A9F4"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text=" /5 " />
+
+
+
+</LinearLayout>

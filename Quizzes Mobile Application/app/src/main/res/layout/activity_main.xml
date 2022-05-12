@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="casual"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:text=" Quiz "
+        android:textColor="#000000"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:text=" Question No. 1 :"
+        android:textColor="#000000"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question"
+        android:textColor="#000000"
+        android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:text=" 5*5 ="
+        android:textSize="35dp" />
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp">
+        <RadioButton
+            android:id="@+id/Button1"
+            android:onClick="answer"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="25"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/Button2"
+            android:onClick="answer"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="15"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/Button3"
+            android:onClick="answer"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="53"
+            android:textSize="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RadioGroup>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+
+            <Button
+                android:id="@+id/previous"
+                android:onClick="Previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Previous"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:layout_weight="1"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/next"
+                android:onClick="next"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="  Next  "
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    <Button
+        android:id="@+id/show_result"
+        android:onClick="show_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:fontFamily="cursive"
+        android:padding="10dp"
+        android:text="Show Result"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
